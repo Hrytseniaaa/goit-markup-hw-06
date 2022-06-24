@@ -709,8 +709,7 @@ font-size: 14px;
 
 .submit-container {
     display: flex;
-    align-items: center;
-    align-content: center;
+    align-items: flex-end;
 }
 
 .footer-user-name {
@@ -737,7 +736,7 @@ font-weight: 700;
     letter-spacing: 0.06em;
 
     color:var(--white-color);
-    transition-property: box-shadow, background-color;
+    transition-property: background-color;
     transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -745,7 +744,6 @@ font-weight: 700;
 .footer-submit-button:hover,
 .footer-submit-button:focus {
     background-color: var(--button-hover--);
-    box-shadow: ;
 }
 
 .submit-icon {
@@ -1185,7 +1183,7 @@ margin-bottom: 20px;
         border: 0;
         background-color: #2196F3;
         color: var(--white-color);
-      transition-property: background-color;
+      transition-property: background-color box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
