@@ -86,6 +86,24 @@ body {
         color:var(--section-title-color)
 }
 
+
+
+ .visually-hidden {
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     margin: -1px;
+     border: 0;
+     padding: 0;
+
+     white-space: nowrap;
+     clip-path: inset(100%);
+     clip: rect(0 0 0 0);
+     overflow: hidden;
+ }
+
+
+
 ul {
     list-style: none;
 } 
@@ -266,11 +284,7 @@ color:var(--accent-color);
 
 /* герой */
 
-.hero .container{
 
- /* margin-bottom: ; */
-
-}
 
 .hero {
     background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/icons&BG/Img-bg-hero.jpg);
@@ -298,61 +312,52 @@ color:var(--accent-color);
      
 }
        
-/* button */
-/* .hero .hero-button {
-    
-   
-    padding: 10px  34px;
-}         */
-        
+      
 
 .btn {
     display: flex;
     align-items: center;
     justify-content: center;
      min-width: 200px;
-   
+     padding-top: 10px;
+     padding-bottom: 10px;
+
+color: var(--white-color);
+      background-color: var(--accent-color); 
     margin: 0 auto;
     border-radius: 4px;
-        font-family: inherit;
+   border: 0;
+
         font-weight: 700;
         font-size: 16px;
         line-height: 1.88;
-        border: 0;
-        background-color: #2196F3; 
-        padding: 10px 34px;
+        letter-spacing: 0.06em;
+      
+        
 
         cursor: pointer; 
         transition-property: background-color;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-   
-
 }
-
-
-.hero-button {
-    /* transition-property: background-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
- 
-}
-
 
 .btn:hover,
 .btn:focus {
-    background: #188CE8;
+background-color: var(--button-hover--);
 }
 
 
 
  /* cпільне для банера */
- .btn,
+ 
  .hero-title {
      color: var(--white-color);
      letter-spacing: 0.06em;
   
  } 
+
+
+
  /* герой закрито */
 
  /* перша секція */
@@ -372,23 +377,6 @@ color:var(--accent-color);
  
  }
 
- .container-preferences {
-
- }
-
- .visually-hidden {
-     position: absolute;
-     width: 1px;
-     height: 1px;
-     margin: -1px;
-     border: 0;
-     padding: 0;
-
-     white-space: nowrap;
-     clip-path: inset(100%);
-     clip: rect(0 0 0 0);
-     overflow: hidden;
- }
 
 
 .preferences-title {
@@ -523,13 +511,6 @@ background: #F5F4FA;
 
 /* ---------customers-------- */
 
-.customer-title {}
-
-.customers-container {}
-
-
-
-
 
 
 
@@ -552,8 +533,7 @@ background: #F5F4FA;
 .customer-link:focus {
     color: var(--accent-color);
     border-color: var(--accent-color);
-    /* color: var(--accent-color);
-    border: var(--accent-color); */
+  
 }
 
 .customer-link {
@@ -584,11 +564,6 @@ background: #F5F4FA;
     position: absolute;
     fill: currentColor;
 }
-.customer {
-   
-}
-         
-
 
 
 
@@ -679,63 +654,39 @@ font-size: 14px;
 }
 
 
-.join-title {
-     margin-bottom: 20px;
-
-}
-
 .footer-titles {
+     margin-bottom: 20px;
      font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-align: left;
     text-transform: uppercase;
-    
+    display: block;
     color: var(--white-color);
 }
-
+ 
 
 .sub {
-    display: flex;
-    flex-direction: column;
-    margin-right: 12px;
-}
-
-
-.submit-container {
-
-    display: flex;
+    display: flex;    
     align-items: flex-end;
 }
 
-.footer-user-name {
+.footer-label {
+        margin-right: 12px;
+}
+
+
+.footer-mail {
+    color: var(--white-color);
     padding: 15px 16px;
-    background: #2F303A;
+    background: transparent;
     width: 358px;
     height: 50px;
-    margin-top: 20px;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
 
 }
 
-.footer-submit-button {
-    
-   padding-left: 29px;
-   padding-right: 28px;
-
-font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.06em;
-
-    color:var(--white-color);
-    transition-property: background-color;
-    transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .footer-submit-button:hover,
 .footer-submit-button:focus {
@@ -754,9 +705,12 @@ font-weight: 700;
 
  }
 
- .footer-item:last-child {
+
+.submit-container {
+    display: block;
      margin-left: auto;
- }
+}
+
 
 
 
@@ -913,10 +867,6 @@ background-color: var(--accent-color);
 color: var(--white-color);
 }
 
-.exampls .title {
-
-}
-
 
 
 /* ---------ICONS-------- */
@@ -933,11 +883,7 @@ color: var(--white-color);
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
-    
-
 }
-
-
 
 
 .co-worker-soc-icon {
@@ -984,7 +930,7 @@ color: var(--white-color);
 
 .modal {
     position: absolute ;
-   
+        padding: 40px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
@@ -1025,13 +971,6 @@ color: var(--white-color);
 
 
 /* ---------modal WINDOW---------- */
-
-
-
-.modal-info {
-    
-    padding: 40px;
-}
 
 
 .modal-title {
@@ -1075,7 +1014,7 @@ color: var(--white-color);
     padding-left: 42px;
     width: 100%;
     height: 40px;
-
+        outline: none;
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         transition-property: border-color, fill;
@@ -1101,17 +1040,28 @@ color: var(--white-color);
     margin-bottom: 10px;
 }
 
+.comment-field {
+    margin-bottom: 20px;
+}
+
+
+
+
 .modal-comment {
     width: 100%;
     height: 120px;
    padding: 12px 16px;
     resize: none;
-margin-bottom: 20px;
+    outline: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         transition-property: border-color;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-checkbox {
+    margin-bottom: 30px;
 }
 
 .modal-check {
@@ -1130,6 +1080,7 @@ margin-bottom: 20px;
         display: flex;
  align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .modal-check-text::before {
@@ -1148,7 +1099,7 @@ margin-bottom: 20px;
     background-repeat: no-repeat;
     background-position: center;
 
-    border: none;
+    border: var(--accent-color);
 }
 
 .privacy-link {
@@ -1167,29 +1118,6 @@ margin-bottom: 20px;
 
 }
 
-
-
-
-
-.modal-button {
-   padding: 10px 55px;
-        margin: 0 auto;
-        border-radius: 4px;
-        font-family: inherit;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.88;
-        border: 0;
-        background-color: #2196F3;
-        color: var(--white-color);
-      transition-property: background-color box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-        margin-top: 30px;
-     
-        display: flex;
-}
 
 .modal-button:hover,
 .modal-button:focus {

@@ -406,16 +406,19 @@
 
                 <div class="submit-container footer-item">
                     <form class="sub">
-                        <label for="footer-submit" class="sub-label footer-titles">Подпишитесь на рассылку</label>
-                        
+                        <label  
+                        class="footer-label"><span class=" footer-titles">Подпишитесь на рассылку</span>
                         <input 
                         name="user-mail" 
                         type="email" 
-                        class=" footer-user-name"
-                         id="footer-submit"
+                        class=" footer-mail"
                          placeholder="E-mail">
+                        </label>
+                        
+                        
                
-                            <button class="btn footer-submit-button" type="submit">Подписаться <svg class=" submit-icon " width="24px"
+                            <button class="btn footer-submit-button" 
+                            type="submit">Подписаться <svg class=" submit-icon " width="24px"
                             height="24px">
                             <use href="./images/icons&BG/icons.svg#icon-icon-send"></use>
                         </svg>
@@ -449,7 +452,7 @@
           
          </button>
 
-          <div class="modal-info">
+         
                 <p class="modal-title">
                     Оставьте свои данные, мы вам перезвоним
                 </p>
@@ -481,7 +484,7 @@
                         
                     </div>
 
-                    <div class="modal-field">
+                    <div class="modal-field ">
                         <label for="user-mail"
                          class="modal-label">Почта</label>
                         <div class="modal-wrap">
@@ -498,7 +501,7 @@
 
                  
 
-                        <div class="modal-field">
+                        <div class="modal-field comment-field">
                             <label 
                             for="user-comment" 
                             class="modal-label">Комментарий</label>
@@ -510,7 +513,7 @@
                              ></textarea>
                         </div>
 
-                        <div class="modal-field">
+                        <div class="modal-checkbox">
                         
                             <input type="checkbox" name="privacy" class="modal-check visually-hidden" value="true" id="check">
                             <label class="modal-check-text" for="check">Соглашаюсь с рассылкой и принимаю&nbsp;<a class=" privacy-link" href="">
@@ -521,11 +524,7 @@
                     
                     
                     
-                    <!-- <input name="user-comment"
-                         type="text"
-                          class="modal-input comment-modal-input"
-                           placeholder="Введите текст"
-                           id="user-comment"> -->
+               
                     
                     <button 
                     type="submit" 
@@ -537,8 +536,8 @@
 
 
 
-           </div>
-     </div>
+           
+                  </div>
  </div>
 
 <script src="./js/modal.js"></script>
