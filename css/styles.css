@@ -299,16 +299,19 @@ color:var(--accent-color);
 }
        
 /* button */
-.hero .hero-button {
+/* .hero .hero-button {
     
    
     padding: 10px  34px;
-}        
+}         */
         
 
 .btn {
-     min-width: 200;
-     min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     min-width: 200px;
+   
     margin: 0 auto;
     border-radius: 4px;
         font-family: inherit;
@@ -317,30 +320,34 @@ color:var(--accent-color);
         line-height: 1.88;
         border: 0;
         background-color: #2196F3; 
+        padding: 10px 34px;
 
         cursor: pointer; 
+        transition-property: background-color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    
 
 }
 
 
 .hero-button {
-    transition-property: background-color;
-        transition-duration: 250ms;.
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
  
 }
 
 
-.hero .hero-button:hover,
-.hero .hero-button:focus {
+.btn:hover,
+.btn:focus {
     background: #188CE8;
 }
 
 
 
  /* cпільне для банера */
- .hero-button,
+ .btn,
  .hero-title {
      color: var(--white-color);
      letter-spacing: 0.06em;
@@ -673,23 +680,18 @@ font-size: 14px;
 
 
 .join-title {
-    font-weight: 700;
-    font-size: 14;
-    height: 1.14;
+     margin-bottom: 20px;
+
+}
+
+.footer-titles {
+     font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
     text-align: left;
-    margin-bottom: 20px;
+    text-transform: uppercase;
     
     color: var(--white-color);
-
-}
-
-
-.address-container {
-    margin-right: 70px;
-}
-
-.join-container {
-    margin-right: 93px;
 }
 
 
@@ -699,15 +701,9 @@ font-size: 14px;
     margin-right: 12px;
 }
 
-.sub-label {
-    font-weight: 700;
-        font-size: 14px;
-        line-height: 1.21;
-        text-transform: uppercase; 
-        color:var(--white-color);
-}
 
 .submit-container {
+
     display: flex;
     align-items: flex-end;
 }
@@ -753,10 +749,14 @@ font-weight: 700;
 
 
 
- /* .footer-item:not(:last-child) {
+ .footer-item:not(:last-child) {
      margin-right: 70px;
 
- } */
+ }
+
+ .footer-item:last-child {
+     margin-left: auto;
+ }
 
 
 
@@ -1153,7 +1153,6 @@ margin-bottom: 20px;
 
 .privacy-link {
     color: var(--accent-color);
-    margin-left: 4px;
 }
 
 

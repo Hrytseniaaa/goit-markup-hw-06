@@ -9,7 +9,6 @@
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/main.css">
 
 </head>      
 <body>   
@@ -377,7 +376,7 @@
         
                 <div class="join-container footer-item">
         
-                    <h3 class="join-title">присоединяйтесь</h3>
+                    <h3 class="join-title footer-titles">присоединяйтесь</h3>
                     <ul class="co-worker-soc-list">
                         <li class="co-worker-soc-item">
                             <a href="" class="master-soc">
@@ -406,8 +405,8 @@
                 </div>
 
                 <div class="submit-container footer-item">
-                    <div class="sub">
-                        <label for="footer-submit" class="sub-label">Подпишитесь на рассылку</label>
+                    <form class="sub">
+                        <label for="footer-submit" class="sub-label footer-titles">Подпишитесь на рассылку</label>
                         
                         <input 
                         name="user-mail" 
@@ -415,12 +414,13 @@
                         class=" footer-user-name"
                          id="footer-submit"
                          placeholder="E-mail">
-                    </div >
-                    <button class="btn footer-submit-button" type="submit">Подписаться <svg class=" submit-icon " width="24px"
+               
+                            <button class="btn footer-submit-button" type="submit">Подписаться <svg class=" submit-icon " width="24px"
                             height="24px">
                             <use href="./images/icons&BG/icons.svg#icon-icon-send"></use>
                         </svg>
-                    </button>
+                         </button>
+                    </form>
                 </div>
 
 
@@ -436,7 +436,7 @@
 
 
 
-        <!-- -----------МОДАЛЬНЕ ВІКНО-------- -->
+        <!-------------МОДАЛЬНЕ ВІКНО-------- -->
 
 
 
@@ -513,7 +513,7 @@
                         <div class="modal-field">
                         
                             <input type="checkbox" name="privacy" class="modal-check visually-hidden" value="true" id="check">
-                            <label class="modal-check-text" for="check">Соглашаюсь с рассылкой и принимаю <a class=" privacy-link" href="">
+                            <label class="modal-check-text" for="check">Соглашаюсь с рассылкой и принимаю&nbsp;<a class=" privacy-link" href="">
                                     Условия договора</a></label>
                         
                         </div>
