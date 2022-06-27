@@ -953,15 +953,13 @@ color: var(--white-color);
     justify-content: center;
         align-items: center;
         cursor: pointer;
-
-}
-
-.close-svg {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-svg:hover,
-.close-svg:focus {
+
+
+.close-button:hover,
+.close-button:focus {
     fill: var(--accent-color);
 }
 
